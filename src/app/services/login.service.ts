@@ -5,10 +5,9 @@ export class LoginService {
 
   constructor() { }
 
-
   auth(user: string, password: string): boolean {
 
-    if (user == 'dotnet' && password == 'SP') {
+    if (user === 'dotnet' && password === 'SP') {
       localStorage.setItem('token', '.NET_SP');
       return true;
     } else {
@@ -16,5 +15,4 @@ export class LoginService {
     }
 
   }
-
 }

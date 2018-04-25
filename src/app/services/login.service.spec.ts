@@ -2,8 +2,7 @@ import { TestBed, inject } from '@angular/core/testing';
 
 import { LoginService } from './login.service';
 
-describe('Validar serviço de autenticação', () => {
-
+describe('LoginService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [LoginService]
@@ -17,5 +16,4 @@ describe('Validar serviço de autenticação', () => {
   it('Usuário ou senha válido(s)', inject([LoginService], (service: LoginService) => {
     expect(service.auth('dotnet', 'SP2')).toBeFalsy();
   }));
-
 });
